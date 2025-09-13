@@ -1,0 +1,1 @@
+for /f "tokens=2,5" %i in ('netstat -n -o ^| findstr :9996') do taskkill /PID %j /F

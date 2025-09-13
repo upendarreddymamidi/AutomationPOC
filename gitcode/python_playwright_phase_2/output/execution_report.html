@@ -1,0 +1,78 @@
+
+    <html>
+    <head>
+        <title>Automation Execution Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f4f4f4;
+            }
+            h1 {
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            .status-pass {
+                color: green;
+                font-weight: bold;
+            }
+            .status-fail {
+                color: red;
+                font-weight: bold;
+            }
+            .process-button {
+                cursor: pointer;
+                background-color: #008CBA;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                margin: 5px;
+            }
+            .sub-process {
+                display: none;
+                margin-left: 20px;
+                padding: 10px;
+                border-left: 2px solid #ccc;
+                background-color: #e7f4fa;
+            }
+        </style>
+        <script>
+            function toggleSubProcess(elem) {
+                var subProcessList = elem.nextElementSibling;
+                if (subProcessList.style.display === "block") {
+                    subProcessList.style.display = "none";
+                } else {
+                    subProcessList.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Automation Execution Report</h1>
+        <table>
+            <tr>
+                <th>Business Process</th>
+                <th>Script Name</th>
+                <th>Status</th>
+                <th>Duration (s)</th>
+            </tr>
+    
+        </table>
+        <h2>Total Duration: 0.00 seconds</h2>
+    </body>
+    </html>
+    

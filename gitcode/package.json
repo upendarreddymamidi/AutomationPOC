@@ -1,0 +1,13 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "cd frontend && set PORT=3006 && npm start",
+    "backend": "cd backend && npm run dev",
+    "flask": "cd python_playwright_phase_2 && python flask_runner.py",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\" \"call venv/Scripts/activate && npm run flask\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

@@ -1,0 +1,116 @@
+
+    <html>
+    <head>
+        <title>Automation Execution Report</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        thead {
+            background-color: rgb(236, 47, 47); 
+        }
+        tbody {
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            color: white;
+        }
+        .status-pass {
+            color: green;
+            font-weight: bold;
+        }
+        .status-fail {
+            color: red;
+            font-weight: bold;
+        }
+        .process-button {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            padding: 10px 15px;
+            border: 2px solid rgb(255, 60, 0); 
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .sub-process {
+            display: none;
+            margin-left: 20px;
+            padding: 10px;
+            border-left: 2px solid #e7e7e7;
+            background-color: #eef1f3;
+        }
+        </style>
+        <script>
+            function toggleSubProcess(elem) {
+                var subProcessRow = elem.parentElement.parentElement.nextElementSibling;
+                if (subProcessRow.style.display === "table-row") {
+                    subProcessRow.style.display = "none";
+                } else {
+                    subProcessRow.style.display = "table-row";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Automation Execution Report</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Row #</th>
+                    <th>Country</th>
+                    <th>Business Process</th>
+                    <th>Sub Processes</th>
+                    <th>Status</th>
+                    <th>Duration (s)</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td><button class="process-button" onclick="toggleSubProcess(this)">1</button></td>
+                <td>Japan</td>
+                <td>hire</td>
+                <td>4</td>
+                <td class="status-fail">Fail</td>
+                <td>424.41</td>
+            </tr>
+            <tr class="sub-process">
+                <td colspan="6">
+                    <div>
+                        <strong>Sub-Processes:</strong>
+                        <ul>
+        
+                <li class="status-pass">create position - Passed (Time: 82.02s)</li>
+            
+                <li class="status-pass">review hire employee - Passed (Time: 210.74s)</li>
+            
+                <li class="status-pass">change organization assignments - Passed (Time: 61.84s)</li>
+            
+                <li class="status-fail">edit service dates - Failed (Time: 69.81s)</li>
+            
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        
+            </tbody>
+        </table>
+        <h2>Total Duration: 424.41 seconds</h2>
+    </body>
+    </html>
+    

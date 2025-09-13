@@ -1,0 +1,13 @@
+{
+  "Add Contract": "Add_contract",
+  "Close Contract":"Close_Contract",
+  "Initiation": "initiation",
+  "Review change Job": "approval",
+  "Edit ID":"Edit_ID",
+  "Maintain employee contract":"maintain_employee_contract",
+  "Compensation change":"compensation_change",
+  "Complete to do":"complete_to_do",
+  "Edit additional data 2":"Edit_additional_data_2",
+  "Rescind": "rescind",
+  "Correction":"correction"
+}

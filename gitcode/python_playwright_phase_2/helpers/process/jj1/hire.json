@@ -1,0 +1,18 @@
+{
+  "create position": "create_position",
+  "review hire employee": "review_hire_employee",
+  "change organization assignments": "change_organization_assignments",
+  "edit service dates": "edit_service_dates",
+  "add probation period": "add_probation_period",
+  "assign employee collective agreement": "assign_employee_collective_agreement",
+  "union membership": "union_membership",
+  "maintain employee contract": "maintain_employee_contract",
+  "propose compensation hire": "propose_compensation_hire",
+  "edit additional data 2": "edit_additional_data_2",
+  "edit additional data 5": "edit_additional_data_5",
+  "change personal information": "change_personal_information",
+  "edit ids": "edit_ids",
+  "consolidated approve": "consolidated_approve",
+  "rescind": "rescind",
+  "correct": "correct"
+}

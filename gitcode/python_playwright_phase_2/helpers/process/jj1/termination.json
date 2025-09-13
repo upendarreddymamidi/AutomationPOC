@@ -1,0 +1,8 @@
+{
+  "Initiation": "initiation",
+  "Request One Time Payment": "one_time_payment",
+  "OTP -> Manager Approval": "manager_approval",
+  "OTP -> Manager's Manager Approval": "managers_manager_approval",
+  "Rescind": "rescind",
+  "Correction": "correction"
+}
